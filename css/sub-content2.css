@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2")
+    format("woff2");
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2")
+    format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  text-align: center;
+}
+/* --------------------------------- */
+.sub-content2 {
+  width: 100%;
+  height: 100vh;
+  background: #f3c7ff;
+  position: relative;
+  /* overflow: hidden; */
+
+  border-top-left-radius: 62px;
+  border-bottom-left-radius: 62px;
+}
+
+/* 타이틀 */
+
+.next-page3 span:nth-child(1) {
+  text-align: center;
+  /* margin-top: 36px; */
+  color: #b15acf;
+  font-size: 36px;
+  /* font-weight: 600; */
+  position: absolute;
+  top: 15%;
+  left: 44%;
+  font-family: "DungGeunMo", monospace !important;
+}
+.next-page3 span:nth-child(2) {
+  /* text-orientation: mixed; */
+  font-size: 36px;
+  color: #b15acf;
+  white-space: nowrap;
+
+  position: absolute;
+  left: -5%;
+  top: 79%;
+  transform: translateY(-50%) rotate(-90deg);
+
+  /* opacity: 0.6; */
+  font-family: "DungGeunMo", monospace !important;
+}
+img[alt="페이지3"] {
+  position: absolute;
+  top: 17%;
+  left: 58px;
+}
+.emoji-left {
+  position: absolute;
+  left: 131px;
+  opacity: 0.37;
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 620px;
+  height: 413px;
+  top: 74%;
+  /* overflow: hidden; */
+}
+
+.emoji-right {
+  position: absolute;
+  right: -1px;
+  opacity: 0.37;
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 620px;
+  height: 413px;
+  top: -10%;
+}
+
+/* 타이머 위치 */
+
+.timer-wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* 원형 타이머 */
+
+.timer-circle {
+  --progress: 360deg;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background: conic-gradient(#b15acf var(--progress), #ebd9f5 0deg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 1s linear;
+}
+
+/* 가운데 원 */
+
+.timer-inner {
+  width: 200px;
+  height: 200px;
+
+  background: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 텍스트 */
+
+.timer-inner p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.timer-inner h2 {
+  margin: 4px 0 0 0;
+}
+
+/* 버튼 */
+
+.next-btn {
+  margin-top: 40px;
+  width: 150px;
+  height: 60px;
+  background: #ffff67;
+  border-radius: 22px;
+  border: 1px solid #b15acf;
+  /* font-weight: 700; */
+  color: #9b4acf;
+  position: absolute;
+  top: 80%;
+  cursor: pointer;
+  left: 46%;
+  font-size: 24px;
+
+  font-family: "DungGeunMo", monospace !important;
+}
+
+/* 손가락 */
+
+.next-btn img {
+  position: absolute;
+  right: -18px;
+  bottom: -10px;
+  width: 40px;
+}
+.back-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  text-align: center;
+}
+
+.back-btn img {
+  display: block;
+  margin-top: 6px;
+}
+/*  */
+/* 페이지 슬라이드 */
+body {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: pageIn 0.6s ease forwards;
+}
+
+@keyframes pageIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.page-out {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: 0.5s;
+}
